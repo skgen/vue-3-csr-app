@@ -16,7 +16,7 @@ yarn install
 
 ### Create `.env.local` file based on `.env`
 Update `VITE_APP_PORT` to fit the project number.
-*ex: **PUX012**, `VITE_APP_PORT=3012`*
+*e.g.: **PUX012**, `VITE_APP_PORT=3012`*
 
 ### Compile and Hot-Reload for Development
 
@@ -42,6 +42,7 @@ yarn lint
 
 To create new translation languages, simply create a new file matching locale code
 **e.g.:** `fr|en|en-GB|en-US.json`
+
 Re run `yarn dev` to force compiler to parse again i18n files & detect locales
 > Locales are automatically detected thanks to **@intlify/vite-plugin-vue-i18n/** at build time & when server starts, they are then stored in-memory and served throught an import alias handled by **vite**
 
@@ -49,11 +50,14 @@ Re run `yarn dev` to force compiler to parse again i18n files & detect locales
 
 > Public resources **are not compiled** at build time whereas asset ones are, for deeper explanations : check [this](https://vitejs.dev/guide/assets.html) 
 
-**`/public/fonts`** Every fonts used in the project
+**`/public/fonts`**
+Every fonts used in the project
 
-**`/public/images`** Public served images
+**`/public/images`**
+Public served images
 
-**`/public/meta`** Meta assets like a *favicon* or any other *manifest*, *apple*|*android* icons etc ... They are usually included in some `<header />` `<meta />` tags
+**`/public/meta`**
+Meta assets like a *favicon* or any other *manifest*, *apple*|*android* icons etc ... They are usually included in some `<header />` `<meta />` tags
 
 ### `/src` Application code
 
