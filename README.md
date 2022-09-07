@@ -35,3 +35,24 @@ yarn build
 ```sh
 yarn lint
 ```
+
+## Project Structure
+
+### `/i18n` Translations
+
+To create new translation languages, simply create a new file matching locale code
+**e.g.:** `fr|en|en-GB|en-US.json`
+
+### `/public` Public resources
+
+> Public resources **are not compiled** at build time whereas asset ones are, for deeper explanations : check [this](https://vitejs.dev/guide/assets.html) 
+
+**`/public/fonts`** Every fonts used in the project
+
+**`/public/images`** Public served images
+
+**`/public/meta`** Meta assets like a *favicon* or any other *manifest*, *apple*|*android* icons etc ... They are usually included in some `<header />` `<meta />` tags
+
+### `/src` Application code
+
+> Work in progress ...
