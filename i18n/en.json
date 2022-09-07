@@ -1,0 +1,27 @@
+{
+    "app": {
+        "welcome": "Welcome on {appName} !",
+        "theme": {
+            "auto": "Sys-Theme",
+            "light": "Light Theme",
+            "dark": "Dark Theme"
+        },
+        "i18n": {
+            "fr": "French",
+            "en": "English"
+        }
+    },
+    "project": {
+        "label": "Project",
+        "items": {
+            "creality-ender-3": {
+                "name": "Creality Ender 3",
+                "description": "Creality Upgraded Ender 3: Ender-3 S1 Direct Drive, Auto Leveling 3D Printer, Sprite Direct Dual-Gear Extruder: The \"Sprite\" is lighter and features less inertia and more precise positioning, supports PLA/TPU/PETG/ABS print filaments with auto Leveling with Creality CR Touch"
+            },
+            "prusa-i3-mk3s+": {
+                "name": "Prusa i3 MK3S+",
+                "description": "The Original Prusa i3 MK3S+ is the latest version of our award-winning 3D printers. We have upgraded the MK3S with a brand new SuperPINDA probe for improved first layer calibration, added high-quality Misumi bearings and made various useful design tweaks."
+            }
+        }
+    }
+}

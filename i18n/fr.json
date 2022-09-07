@@ -1,0 +1,27 @@
+{
+    "app": {
+        "welcome": "Bienvenue sur {appName} !",
+        "theme": {
+            "auto": "Thème système",
+            "light": "Thème clair",
+            "dark": "Thème sombre"
+        },
+        "i18n": {
+            "fr": "Français",
+            "en": "Anglais"
+        }
+    },
+    "project": {
+        "label": "Projet",
+        "items": {
+            "creality-ender-3": {
+                "name": "Creality Ender 3",
+                "description": "Creality a amélioré Ender 3 : Ender-3 S1 Direct Drive, Imprimante 3D à nivellement automatique, le « Sprite » est plus léger et présente moins d'inertie et un positionnement plus précis, prend en charge les filaments d'impression PLA/TPU/PETG/ABS avec Mise à niveau automatique avec Creality CR Touch"
+            },
+            "prusa-i3-mk3s+": {
+                "name": "Prusa i3 MK3S+",
+                "description": "L'Original Prusa i3 MK3S+ est la dernière version de nos imprimantes 3D primées. Nous avons amélioré la MK3S avec une toute nouvelle sonde SuperPINDA pour une meilleure calibration de la première couche, l'ajout de roulements Misumi de haute qualité et fait divers ajustements de design utiles."
+            }
+        }
+    }
+}
