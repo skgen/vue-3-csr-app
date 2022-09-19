@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
-    "preview": "vite preview ",
+    "preview": "vite preview",
     "test:unit": "vitest --environment jsdom",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
@@ -27,8 +27,6 @@
     "@rushstack/eslint-patch": "^1.1.0",
     "@types/jsdom": "^16.2.14",
     "@types/node": "^16.11.45",
-    "@types/passport": "^1.0.9",
-    "@types/passport-oauth2": "^1.4.11",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "@vitejs/plugin-vue": "^3.0.1",
