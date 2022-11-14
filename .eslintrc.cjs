@@ -35,7 +35,16 @@ module.exports = {
         "requireLast": false
       },
       "multilineDetection": "brackets"
-    }]
+    }],
+    "max-len": ["error", { code: 150 }],
   },
-  ignorePatterns: ['.eslintrc.cjs', 'vite.config.ts', 'stylelint.config.js', 'sdk-generator.ts']
+  ignorePatterns: [
+    '.eslintrc.cjs',
+    'vite.config.ts', 
+    'vite.package.config.ts', 
+    'stylelint.config.js', 
+    'sdk-generator.ts', 
+    'dist',
+    'build'
+  ],
 };

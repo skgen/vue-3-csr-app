@@ -13,7 +13,6 @@
     "slint": "stylelint src/**/*.{scss,vue} --fix --color"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.0.0",
     "date-fns": "^2.29.2",
     "github-markdown-css": "^5.1.0",
     "normalize.css": "^8.0.1",
