@@ -13,15 +13,15 @@
         {{ t(`app.i18n.${option}`) }}
       </option>
     </select>
-    <ChevronDownIcon />
+    <AppIcon icon="expand_more" />
   </div>
 </template>
 
 <script lang="ts" setup>
-import ChevronDownIcon from '@heroicons/vue/24/outline/ChevronDownIcon';
 import { watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { persistLocale } from '@/lib/modules/i18n';
+import AppIcon from '@/components/AppIcon.vue';
 
 const { t, locale, availableLocales } = useI18n();
 
@@ -34,37 +34,21 @@ watch(locale, persistLocale);
 
 .pux-AppI18nSelect {
     position: relative;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px 5px 5px 10px;
     overflow: hidden;
     background-color: var(--app-background-color-soft);
     border: 1px solid var(--app-border-color);
     border-radius: 5px;
 
     select {
-        padding: 5px 10px;
         color: var(--app-text-color);
         background-color: inherit;
         border: none;
         outline: none;
-    }
-
-    svg {
-        position: absolute;
-        top: 52%;
-        right: 5px;
-        width: 16px;
-        pointer-events: none;
-        transform: translate(0, -50%);
-    }
-
-    &::before {
-        @include pseudo;
-
-        top: 0;
-        right: 0;
-        width: 15px;
-        height: 100%;
-        pointer-events: none;
-        background-color: inherit;
+        appearance: none;
     }
 }
 </style>

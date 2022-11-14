@@ -9,9 +9,6 @@
 </template>
 
 <script lang="ts" setup>
-import HomeIcon from '@heroicons/vue/24/outline/HomeIcon';
-import WrenchScrewdriverIcon from '@heroicons/vue/24/outline/WrenchScrewdriverIcon';
-import CubeTransparentIcon from '@heroicons/vue/24/outline/CubeTransparentIcon';
 import AppThemeSelect from '@/components/AppThemeSelect.vue';
 import AppBreadcrumb from '@/components/AppBreadcrumb.vue';
 import AppI18nSelect from '@/components/AppI18nSelect.vue';
@@ -19,17 +16,17 @@ import AppI18nSelect from '@/components/AppI18nSelect.vue';
 const navigation = [
   {
     label: 'Home',
-    icon: HomeIcon,
+    icon: 'home',
     url: '/',
   },
   {
     label: 'Creality',
-    icon: CubeTransparentIcon,
+    icon: 'view_in_ar',
     url: '/project/creality-ender-3',
   },
   {
     label: 'Prusa',
-    icon: WrenchScrewdriverIcon,
+    icon: 'handyman',
     url: '/project/prusa-i3-mk3s+',
   },
 ];

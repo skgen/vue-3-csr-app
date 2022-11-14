@@ -5,6 +5,7 @@
       :key="link.url"
       :to="link.url"
     >
+      <AppIcon :icon="link.icon" />
       <component :is="link.icon" />
       {{ link.label }}
     </AppLink>
@@ -12,14 +13,14 @@
 </template>
 
 <script lang="ts" setup>
-import type { FunctionalComponent } from 'vue';
 import AppLink from '@/components/AppLink.vue';
+import AppIcon from '@/components/AppIcon.vue';
 
 type Props = {
   navigation: {
     label: string;
     url: string;
-    icon: FunctionalComponent;
+    icon: string;
   }[];
 };
 

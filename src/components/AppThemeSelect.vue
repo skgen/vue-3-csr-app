@@ -13,15 +13,15 @@
         {{ t(`app.theme.${Theme[option]}`) }}
       </option>
     </select>
-    <ChevronIcon />
+    <AppIcon icon="expand_more" />
   </div>
 </template>
 
 <script lang="ts" setup>
-import ChevronIcon from '@heroicons/vue/24/outline/ChevronDownIcon';
 import { useI18n } from 'vue-i18n';
 import useTheme from '@/composables/useTheme';
 import { Theme } from '@/lib/modules/theme';
+import AppIcon from '@/components/AppIcon.vue';
 
 const { themes, theme, update } = useTheme();
 
@@ -40,37 +40,21 @@ function handleChange(evt: Event) {
 
 .pux-AppThemeSelect {
     position: relative;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px 5px 5px 10px;
     overflow: hidden;
     background-color: var(--app-background-color-soft);
     border: 1px solid var(--app-border-color);
     border-radius: 5px;
 
     select {
-        padding: 5px 10px;
         color: var(--app-text-color);
         background-color: inherit;
         border: none;
         outline: none;
-    }
-
-    > svg {
-        position: absolute;
-        top: 52%;
-        right: 5px;
-        width: 16px;
-        pointer-events: none;
-        transform: translate(0, -50%);
-    }
-
-    &::before {
-        @include pseudo;
-
-        top: 0;
-        right: 0;
-        width: 15px;
-        height: 100%;
-        pointer-events: none;
-        background-color: inherit;
+        appearance: none;
     }
 }
 </style>
