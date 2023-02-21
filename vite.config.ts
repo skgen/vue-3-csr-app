@@ -5,6 +5,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx';
 import svgLoader from 'vite-svg-loader';
 import vueI18n from '@intlify/vite-plugin-vue-i18n';
 import { exit } from 'process';
+import basicSsl from '@vitejs/plugin-basic-ssl';
 
 // https://vitejs.dev/config/
 export default ({ mode }: { mode: string; }) => {
@@ -20,6 +21,7 @@ export default ({ mode }: { mode: string; }) => {
   return defineConfig({
     server: {
       port,
+      https: true,
     },
     preview: {
       port,
@@ -31,6 +33,7 @@ export default ({ mode }: { mode: string; }) => {
       vueI18n({
         include: fileURLToPath(new URL('./i18n/**', import.meta.url))
       }),
+      basicSsl(),
     ],
     resolve: {
       alias: [

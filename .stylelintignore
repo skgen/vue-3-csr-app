@@ -1,4 +1,2 @@
-build/**/*.css
-build/**/*.scss
 dist/**/*.css
 dist/**/*.scss

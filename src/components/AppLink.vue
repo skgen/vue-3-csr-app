@@ -1,56 +1,75 @@
 <template>
-  <RouterLink
-    v-if="to && !onClick"
+  <router-link
+    v-if="props.to && isRelative"
     v-slot="{ href, navigate, isActive, isExactActive }"
-    :to="to"
+    :to="props.to"
     custom
   >
     <a
       :href="href"
       class="pux-AppLink"
-      :data-wrapper="asWrapper ? 'true' : null"
       :data-active="isActive ? true : null"
       :data-exact-active="isExactActive ? true : null"
+      :data-wrapper="props.asWrapper || undefined"
+      v-bind="$attrs"
       @click="navigate"
     >
       <slot />
     </a>
-  </RouterLink>
-  <button
-    v-if="onClick && !to"
+  </router-link>
+  <a
+    v-else-if="props.to && !isRelative"
+    :href="props.to"
     class="pux-AppLink"
-    :data-wrapper="asWrapper ? 'true' : null"
-    @click="onClick"
+    :data-wrapper="props.asWrapper || undefined"
+    v-bind="$attrs"
+  >
+    <slot />
+  </a>
+
+  <button
+    v-else-if="props.asButton"
+    class="pux-AppLink"
+    :data-wrapper="props.asWrapper || undefined"
+    v-bind="$attrs"
   >
     <slot />
   </button>
-  <template v-if="!to && !onClick">
+
+  <div
+    v-else
+    class="pux-AppLink"
+    :data-wrapper="props.asWrapper || undefined"
+    v-bind="$attrs"
+  >
     <slot />
-  </template>
+  </div>
 </template>
 
 <script lang="ts" setup>
-import { RouterLink } from 'vue-router';
+import { computed } from 'vue';
 
 type Props = {
   to?: string;
-  onClick?: (event: MouseEvent) => void;
+  asButton?: boolean;
   asWrapper?: boolean;
 };
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const isRelative = computed(() => (props.to ? !/^(http:\/\/|https:\/\/|file:\/\/|tel:|mailto:)/i.test(props.to) : false));
 
 </script>
 
 <style lang="scss">
-@import "@style/mixins";
-
 .pux-AppLink {
     padding: 2px 8px;
     transition: background-color 128ms;
 
     &:not([data-wrapper="true"]) {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        color: var(--app-text-color);
         text-decoration: none;
         cursor: pointer;
 
@@ -61,21 +80,9 @@ defineProps<Props>();
 
         &:not([data-active="true"]) {
             &:hover {
-                background-color: var(--hover-background-color);
+                background-color: rgb(255 255 255 / 0.15);
             }
         }
-    }
-}
-
-@include dark {
-    .pux-AppLink {
-        --hover-background-color: rgb(255 255 255 / 15%);
-    }
-}
-
-@include light {
-    .pux-AppLink {
-        --hover-background-color: rgb(0 0 0 / 15%);
     }
 }
 </style>

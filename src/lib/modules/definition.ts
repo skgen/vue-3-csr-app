@@ -6,7 +6,7 @@ export function isValue<T>(v: T): v is NonNullable<T> {
   return !(!isDef(v) || v === null);
 }
 
-export function isArray(v: unknown): boolean {
+export function isArray<T>(v: unknown): v is T[] {
   return isValue(v) && Array.isArray(v);
 }
 
@@ -41,7 +41,10 @@ export function getDefaultAs
   return isValue(t) ? c(t) : d;
 }
 
-export function isEmpty<T extends Record<string, unknown> | unknown[] | string>(v: T): boolean {
+export function isEmpty<T extends Record<string, unknown> | unknown[] | string | undefined | null>(v: T): boolean {
+  if (!isValue(v)) {
+    return true;
+  }
   if (isObject(v)) {
     return Object.keys(v).length === 0;
   }

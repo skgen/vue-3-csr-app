@@ -3,13 +3,11 @@
     <AppBreadcrumb :navigation="navigation" />
     <div class="pux-TheHeader-dashboard">
       <AppI18nSelect />
-      <AppThemeSelect />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import AppThemeSelect from '@/components/AppThemeSelect.vue';
 import AppBreadcrumb from '@/components/AppBreadcrumb.vue';
 import AppI18nSelect from '@/components/AppI18nSelect.vue';
 
@@ -18,6 +16,11 @@ const navigation = [
     label: 'Home',
     icon: 'home',
     url: '/',
+  },
+  {
+    label: 'Install melkor',
+    icon: 'library_add',
+    url: 'https://melkor.pux.fr',
   },
   {
     label: 'Creality',

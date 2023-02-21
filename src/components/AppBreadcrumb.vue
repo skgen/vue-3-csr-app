@@ -6,7 +6,6 @@
       :to="link.url"
     >
       <AppIcon :icon="link.icon" />
-      <component :is="link.icon" />
       {{ link.label }}
     </AppLink>
   </nav>

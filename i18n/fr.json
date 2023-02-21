@@ -1,11 +1,6 @@
 {
     "app": {
         "welcome": "Bienvenue sur {appName} !",
-        "theme": {
-            "auto": "Thème système",
-            "light": "Thème clair",
-            "dark": "Thème sombre"
-        },
         "i18n": {
             "fr": "Français",
             "en": "Anglais"

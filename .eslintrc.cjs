@@ -1,4 +1,3 @@
-/* eslint-env node */
 // eslint-disable-next-line import/no-extraneous-dependencies
 require('@rushstack/eslint-patch/modern-module-resolution');
 
@@ -9,7 +8,7 @@ module.exports = {
   },
   parser: 'vue-eslint-parser',
   parserOptions: {
-    project: './tsconfig.app.json',
+    project: 'tsconfig.app.json',
     tsconfigRootDir: __dirname,
     parser: '@typescript-eslint/parser'
   },
@@ -37,14 +36,12 @@ module.exports = {
       "multilineDetection": "brackets"
     }],
     "max-len": ["error", { code: 150 }],
+    "import/prefer-default-export": "off"
   },
   ignorePatterns: [
     '.eslintrc.cjs',
+    '.stylelintrc.cjs', 
     'vite.config.ts', 
-    'vite.package.config.ts', 
-    'stylelint.config.js', 
-    'sdk-generator.ts', 
     'dist',
-    'build'
   ],
 };

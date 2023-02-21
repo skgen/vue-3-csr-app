@@ -30,8 +30,6 @@ watch(locale, persistLocale);
 </script>
 
 <style lang="scss">
-@import "@style/mixins";
-
 .pux-AppI18nSelect {
     position: relative;
     display: flex;

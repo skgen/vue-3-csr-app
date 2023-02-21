@@ -10,8 +10,6 @@ import TheHeader from '@/components/TheHeader.vue';
 </script>
 
 <style lang="scss">
-@import "@style/mixins";
-
 .pux-App {
     position: relative;
     display: flex;
