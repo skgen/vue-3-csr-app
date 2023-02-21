@@ -14,7 +14,6 @@
   "dependencies": {
     "@vitejs/plugin-basic-ssl": "^1.0.1",
     "date-fns": "^2.29.2",
-    "github-markdown-css": "^5.1.0",
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.16",
     "vue": "^3.2.37",
