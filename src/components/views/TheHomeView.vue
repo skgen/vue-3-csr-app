@@ -1,7 +1,7 @@
 <template>
   <TheHomeTemplate>
     <template #title>
-      {{ $t('app.welcome', { appName }) }}
+      {{ $t('views.home.welcome', { appName }) }}
     </template>
     <template #main>
       <mk-link
@@ -9,7 +9,7 @@
         as-wrapper
       >
         <mk-button outlined>
-          Get Started with Melkor !
+          {{ $t('views.home.getStarted') }}
         </mk-button>
       </mk-link>
     </template>

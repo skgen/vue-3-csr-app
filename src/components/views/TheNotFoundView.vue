@@ -1,11 +1,11 @@
 <template>
   <TheNotFoundTemplate>
     <span>
-      404 - Not found
+      {{ $t('views.notFound.title') }}
     </span>
     <mk-link to="/">
       <mk-icon icon="arrow_back" />
-      Back home
+      {{ $t('views.notFound.back') }}
       <mk-icon icon="house" />
     </mk-link>
   </TheNotFoundTemplate>
