@@ -1,38 +1,15 @@
+@import "@patriarche/melkor/style/mixins";
+
 :root {
-    --c-white: #fff;
-    --c-white-soft: #f8f8f8;
-    --c-black: #181818;
-    --c-black-soft: #222;
-    --c-indigo: #2c3e50;
-    --c-divider-light-1: rgb(60 60 60 / 0.29);
-    --c-divider-light-2: rgb(60 60 60 / 0.12);
-    --c-divider-dark-1: rgb(84 84 84 / 0.65);
-    --c-divider-dark-2: rgb(84 84 84 / 0.48);
-    --c-text-light-1: var(--c-indigo);
-    --c-text-light-2: rgb(60 60 60 / 0.66);
-    --c-text-dark-1: var(--c-white);
-    --c-text-dark-2: rgb(235 235 235 / 0.64);
+    // Generic
+}
 
-    // app
-    color-scheme: dark;
+* {
+    @include light {
+        // Light
+    }
 
-    // --app-font-family-base: "Source Sans Pro", sans-serif;
-    --app-font-family-base: "Roboto Flex", sans-serif;
-    --app-family-special: serif;
-    --app-background-color: var(--c-black);
-    --app-background-color-soft: var(--c-black-soft);
-    --app-text-color: var(--c-text-dark-2);
-    --app-text-heading-color: var(--c-text-dark-1);
-    --app-border-color: var(--c-divider-dark-2);
-    --app-border-color-hover: var(--c-divider-dark-1);
-
-    // For light
-    // color-scheme: light;
-
-    // --app-background-color: var(--c-white);
-    // --app-background-color-soft: var(--c-white-soft);
-    // --app-text-color: var(--c-text-light-2);
-    // --app-text-heading-color: var(--c-text-light-1);
-    // --app-border-color: var(--c-divider-light-2);
-    // --app-border-color-hover: var(--c-divider-light-1);
+    @include dark {
+        // Dark
+    }
 }

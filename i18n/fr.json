@@ -1,4 +1,21 @@
 {
+    "melkor": {
+        "component": {
+            "inputFile": {
+                "dragdrop": "Drag & drop ou {search}",
+                "search": "rechercher"
+            }
+        },
+        "theme": {
+            "auto": "Thème systeme",
+            "light": "Thème lumineux",
+            "dark": "Thème sombre"
+        },
+        "i18n": {
+            "en": "Anglais",
+            "fr": "Français"
+        }
+    },
     "app": {
         "welcome": "Bienvenue sur {appName} !",
         "i18n": {
