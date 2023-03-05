@@ -1,6 +1,5 @@
 import { createApp } from 'vue';
 import { createMelkorUi } from '@patriarche/melkor';
-import { createPinia } from 'pinia';
 
 import '@patriarche/melkor/style';
 import '@/assets/scss/main.scss';
@@ -17,7 +16,5 @@ const mkui = createMelkorUi({
   router,
 });
 app.use(mkui);
-
-app.use(createPinia());
 
 app.mount('#app');
