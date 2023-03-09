@@ -26,6 +26,15 @@ export default ({ mode }: { mode: string; }) => {
     preview: {
       port,
     },
+    build: {
+      rollupOptions: {
+        output: [
+          {
+            assetFileNames: "assets/[name]-[hash][extname]",
+          },
+        ],
+      },
+    },
     plugins: [
       vue(), 
       vueJsx(), 
