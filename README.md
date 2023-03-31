@@ -1,42 +1,76 @@
 
-# Vue 3 CSR App
+<p align="center">
+  <h1 align="center">Vue 3 CSR App</h1>
+  <p align="center">
+     <strong>Vue 3 - TypeScript</strong> starter for client side rendering apps
+  </p>
+</p>
+<br/>
+<p align="center">
+    <a href="https://vuejs.org">
+    <img src="https://img.shields.io/badge/Vue3-41B883?logo=vuedotjs&logoColor=364659" />
+    </a>
+    <a href="https://vitejs.dev">
+    <img src="https://img.shields.io/badge/Vite-9e54f3?logo=vite&logoColor=f6c84c" />
+    </a>
+    <a href="https://www.typescriptlang.org">
+    <img src="https://img.shields.io/badge/TypeScript-4377c0?logo=typescript&logoColor=ffffff" />
+    </a>
+    <a href="https://eslint.org">
+    <img src="https://img.shields.io/badge/ESLint-4f38bc?logo=eslint&logoColor=ffffff" />
+    </a>
+    <a href="https://stylelint.io">
+    <img src="https://img.shields.io/badge/StyleLint-black?logo=stylelint&logoColor=ffffff" />
+    </a>
+</p>
 
-## ![Vue3](https://img.shields.io/badge/Vue3-41B883?logo=vuedotjs&logoColor=364659) ![Vite](https://img.shields.io/badge/Vite-9e54f3?logo=vite&logoColor=f6c84c) ![Typescript](https://img.shields.io/badge/TypeScript-4377c0?logo=typescript&logoColor=ffffff) ![ESLint](https://img.shields.io/badge/ESLint-4f38bc?logo=eslint&logoColor=ffffff) ![StyleLint](https://img.shields.io/badge/StyleLint-black?logo=stylelint&logoColor=ffffff)
+<br/>
+<br/>
 
-## Recommended IDE Setup
+## Table of contents
+
+- [Recommended IDE Setup](#recommended-ide-setup)
+- [Managing .env](#env)
+- [Project Setup](#project-setup)
+  - [Compile and Hot-Reload for Development](#project-setup-dev)
+  - [Type-Check, Compile and Minify for Production](#project-setup-build)
+  - [Lint with ESLint & Stylelint](#project-setup-lint)
+- [Folder Architecture](#folder-architecture)
+
+<h2 id="recommended-ide-setup">Recommended IDE Setup</h2>
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-  
 
-## Project Setup
+<h2 id="env">Create <code>.env.local</code> file based on <code>.env</code></h2>
+
+Update `VITE_APP_PORT` to fit the project number.
+*e.g.: **PUX012**, `VITE_APP_PORT=3012`*
+
+<h2 id="project-setup">Project Setup</h2>
 
 ```sh
 yarn install
 ```
 
-### Create `.env.local` file based on `.env`
-Update `VITE_APP_PORT` to fit the project number.
-*e.g.: **PUX012**, `VITE_APP_PORT=3012`*
-
-### Compile and Hot-Reload for Development
+<h3 id="project-setup-dev">Compile and Hot-Reload for Development</h3>  
 
 ```sh
 yarn dev
 ```
 
-### Type-Check, Compile and Minify for Production
+<h3 id="project-setup-build"> Type-Check, Compile and Minify for Production</h3>
 
 ```sh
 yarn build
 ```
 
-### Lint with [ESLint](https://eslint.org/) & [Stylelint](https://stylelint.io/)
+<h3 id="project-setup-lint"> Lint with <a href="https://eslint.org">ESLint</a> & <a href="https://stylelint.io">Stylelint</a></h3>
 
 ```sh
 yarn lint
 ```
 
-## Project Structure
+<h2 id="folder-architecture">Folder Architecture</h2>
 
 ### `/i18n` Translations
 
