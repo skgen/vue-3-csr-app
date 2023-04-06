@@ -16,12 +16,12 @@
             "fr": "Français"
         }
     },
-    "views": {
-        "home": {
+    "component": {
+        "TheHomeView": {
             "welcome": "Bienvenue sur {appName} !",
             "getStarted": "Propulsé par Melkor, commencer !"
         },
-        "notFound": {
+        "TheNotFoundView": {
             "title": "404 - Page introuvable",
             "back": "Retour accueil"
         }

@@ -1,7 +1,7 @@
 <template>
   <TheHomeTemplate>
     <template #title>
-      {{ $t('views.home.welcome', { appName }) }}
+      {{ $t('component.TheHomeView.welcome', { appName }) }}
     </template>
     <template #main>
       <mk-link
@@ -9,7 +9,7 @@
         as-wrapper
       >
         <mk-button outlined>
-          {{ $t('views.home.getStarted') }}
+          {{ $t('component.TheHomeView.getStarted') }}
         </mk-button>
       </mk-link>
     </template>
