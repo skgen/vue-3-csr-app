@@ -1,5 +1,5 @@
 <template>
-  <TheNotFoundTemplate>
+  <div class="pux-TheNotFoundView">
     <span>
       {{ $t('component.TheNotFoundView.title') }}
     </span>
@@ -8,9 +8,16 @@
       {{ $t('component.TheNotFoundView.back') }}
       <mk-icon icon="house" />
     </mk-link>
-  </TheNotFoundTemplate>
+  </div>
 </template>
 
-<script lang="ts" setup>
-import TheNotFoundTemplate from '@/components/templates/TheNotFoundTemplate.vue';
-</script>
+<style lang="scss">
+.pux-TheNotFoundView {
+    display: flex;
+    flex-direction: column;
+    gap: var(--app-m-3);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+</style>

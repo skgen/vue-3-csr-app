@@ -12,7 +12,7 @@
     "test:unit": "vitest --environment jsdom"
   },
   "dependencies": {
-    "@patriarche/melkor": "~1.13.0",
+    "@patriarche/melkor": "~1.14.0",
     "date-fns": "^2.29.2",
     "pinia": "^2.0.16",
     "vue": "^3.2.37",
