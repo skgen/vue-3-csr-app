@@ -137,7 +137,7 @@ It takes benefit from the **provide/inject** `Vue` feature, helps developers to 
 
 You can see an example [here](https://gitlab.com/patriarche/vuejs-3/vue-3-csr-app/-/snippets/2528922).
 
-###### `/src/app/contexts/{context-name}`
+###### `/src/app/contexts/{contextName}`
 
 A context is composed of **4 parts** :
 
