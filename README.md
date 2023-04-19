@@ -123,7 +123,7 @@ This folder contains each **`Vue` component** of a module.
 Components are meant to store basic logic. For complex ones, you'd better export it into a *hook.*
 
 ##### `/src/app/composables`
-*files:* `.vue`
+*files:* `.ts`
 
 This folder contains each **`Vue` hook** of a module.
 Hooks store reusable logic of a module.
