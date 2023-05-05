@@ -1,10 +1,10 @@
-import HomeView from '@/app/views/TheHomeView.vue';
+import TheHomeView from '@/app/views/TheHomeView.vue';
 
 export default [
   {
     path: '/',
     name: 'home',
-    component: HomeView,
+    component: TheHomeView,
   },
   {
     path: '/:pathMatch(.*)*',
