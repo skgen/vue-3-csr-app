@@ -178,7 +178,7 @@ This file contains each **route** of a module. It is imported in the **router**.
 This folder contains the **modules** of the application. This folder is composed of multiple child folders representing each individual standalone part of the application.
 A **module** folder is a mirror of `/src/app` folder structure.
 
-#####`/src/modules/{module-name}`
+#####`/src/modules/{moduleName}`
 
 Everything inside a **module** is scoped to the module, and therefore **it's forbidden to use module code outside of its folder**.
 This limits side effects & ensure modules integrity.
