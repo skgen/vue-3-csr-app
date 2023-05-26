@@ -1,6 +1,6 @@
 import { fileURLToPath, URL } from 'url';
 import { defineConfig, loadEnv } from 'vite';
-import vue from '@vitejs/plugin-vue'
+import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import svgLoader from 'vite-svg-loader';
 import vueI18n from '@intlify/vite-plugin-vue-i18n';
@@ -8,10 +8,10 @@ import { exit } from 'process';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 
 // https://vitejs.dev/config/
-export default ({ mode }: { mode: string; }) => {
-  process.env = {...process.env, ...loadEnv(mode, process.cwd())};
+export default ({ mode }: { mode: string }) => {
+  process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
-  if(!process.env.VITE_APP_PORT) {
+  if (!process.env.VITE_APP_PORT) {
     console.error('VITE_APP_PORT required.');
     exit(1);
   }
@@ -30,17 +30,17 @@ export default ({ mode }: { mode: string; }) => {
       rollupOptions: {
         output: [
           {
-            assetFileNames: "assets/[name]-[hash][extname]",
+            assetFileNames: 'assets/[name]-[hash][extname]',
           },
         ],
       },
     },
     plugins: [
-      vue(), 
-      vueJsx(), 
-      svgLoader(), 
+      vue(),
+      vueJsx(),
+      svgLoader(),
       vueI18n({
-        include: fileURLToPath(new URL('./i18n/**', import.meta.url))
+        include: fileURLToPath(new URL('./i18n/**', import.meta.url)),
       }),
       basicSsl(),
     ],
@@ -66,4 +66,4 @@ export default ({ mode }: { mode: string; }) => {
       __INTLIFY_PROD_DEVTOOLS__: false,
     },
   });
-}
+};
