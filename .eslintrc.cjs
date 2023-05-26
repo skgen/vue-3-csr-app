@@ -3,7 +3,9 @@ module.exports = {
     '@patriarche/eslint-config-vue',
   ],
   parserOptions: {
-    project: './tsconfig.app.json',
-    project: './tsconfig.config.json',
+    project: [
+      './tsconfig.app.json',
+      './tsconfig.config.json',
+    ],
   },
 };
