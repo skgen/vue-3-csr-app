@@ -12,6 +12,7 @@ export default ({ mode }: { mode: string }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   if (!process.env.VITE_APP_PORT) {
+    // eslint-disable-next-line no-console
     console.error('VITE_APP_PORT required.');
     exit(1);
   }
