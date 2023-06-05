@@ -3,7 +3,7 @@ import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import svgLoader from 'vite-svg-loader';
-import vueI18n from '@intlify/vite-plugin-vue-i18n';
+import vueI18nPlugin from '@intlify/unplugin-vue-i18n/vite';
 import { exit } from 'process';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 
@@ -40,7 +40,7 @@ export default ({ mode }: { mode: string }) => {
       vue(),
       vueJsx(),
       svgLoader(),
-      vueI18n({
+      vueI18nPlugin({
         include: fileURLToPath(new URL('./i18n/**', import.meta.url)),
       }),
       basicSsl(),

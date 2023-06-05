@@ -1,5 +1,6 @@
 import { createI18n } from 'vue-i18n';
-import messages from '@intlify/vite-plugin-vue-i18n/messages';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import messages from '@intlify/unplugin-vue-i18n/messages';
 import { getPersistedLocale } from '@patriarche/melkor';
 
 const locales = Object.keys(messages);

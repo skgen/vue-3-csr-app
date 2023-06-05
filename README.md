@@ -78,7 +78,7 @@ To create new translation languages, simply create a new file matching locale co
 **e.g.:** `fr|en|en-GB|en-US.json`
 
 Re run `yarn dev` to force compiler to parse again i18n files & detect locales
-> Locales are automatically detected thanks to **@intlify/vite-plugin-vue-i18n/** at build time & when server starts, they are then stored in-memory and served throught an import alias handled by **vite**
+> Locales are automatically detected thanks to **@intlify/unplugin-vue-i18n** at build time & when server starts, they are then stored in-memory and served throught an import alias handled by **vite**
 
 ### `/public` Public resources
 
