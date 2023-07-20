@@ -14,7 +14,7 @@
     "postinstall": "npx patch-package"
   },
   "dependencies": {
-    "@patriarche/melkor": "~1.22.1",
+    "@patriarche/melkor": "~1.22.2",
     "@patriarche/vue-hooks": "^1.0.0",
     "date-fns": "^2.29.2",
     "pinia": "^2.1.3",
