@@ -1,42 +1,4 @@
 {
-    "melkor": {
-        "component": {
-            "AppInputFile": {
-                "dragdrop": "Drag & drop ou {search}",
-                "search": "rechercher"
-            },
-            "AppInputIcon": {
-                "uIActions": "Actions UI",
-                "social": "Social",
-                "commonActions": "Actions communes",
-                "communication": "Communication",
-                "photo&Image": "Photo & image",
-                "business&Payments": "Business & paiements",
-                "maps": "Cartes",
-                "textFormatting": "Formattage de texte",
-                "audio&Video": "Audio & vidéo",
-                "transportation": "Transport",
-                "activities": "Activités",
-                "hardware": "Matériel",
-                "android": "Android",
-                "privacy&Security": "Confidentialité et sécurité",
-                "travel": "Voyage",
-                "household": "Ménage",
-                "home": "Maison",
-                "brand": "Marque",
-                "others": "Autres"
-            }
-        },
-        "theme": {
-            "auto": "Thème systeme",
-            "light": "Thème lumineux",
-            "dark": "Thème sombre"
-        },
-        "i18n": {
-            "en": "Anglais",
-            "fr": "Français"
-        }
-    },
     "component": {
         "TheHomeView": {
             "welcome": "Bienvenue sur {appName} !",
