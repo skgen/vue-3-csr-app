@@ -15,8 +15,8 @@
     "strict": true,
     "composite": true,
     "jsx": "preserve",
-    "baseUrl": ".",
     "resolveJsonModule": true,
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "src/*"
