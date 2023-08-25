@@ -4,7 +4,7 @@ import { createPinia } from 'pinia';
 import router from '@/plugins/router';
 import i18n from '@/plugins/i18n';
 import mkui from '@/plugins/melkor';
-import App from '@/TheApp.vue';
+import App from '@/app/components/TheApp.vue';
 
 import '@style/main.scss';
 

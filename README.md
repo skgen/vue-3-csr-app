@@ -96,7 +96,7 @@ Meta assets like a *favicon* or any other *manifest*, *apple*|*android* icons ..
 
 This is the entry point of the app.
 
-#### `/src/App.vue`
+#### `/src/app/components/TheApp.vue`
 
 This is the top level component of the app.
 
