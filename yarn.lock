@@ -654,10 +654,10 @@
     eslint-plugin-vue "^9.0.0"
     typescript "^5.0.4"
 
-"@patriarche/melkor@~1.24.0":
-  version "1.24.0"
-  resolved "https://gitlab.com/api/v4/projects/39947419/packages/npm/@patriarche/melkor/-/@patriarche/melkor-1.24.0.tgz#d3a789772eeae724166255b692aee64024bba645"
-  integrity sha1-06eJdy7q5yQWYlW2kq7mQCS7pkU=
+"@patriarche/melkor@~1.25.5":
+  version "1.25.5"
+  resolved "https://gitlab.com/api/v4/projects/39947419/packages/npm/@patriarche/melkor/-/@patriarche/melkor-1.25.5.tgz#8cf2ab39ad1a8b2f9443abfcff4a213b6599497b"
+  integrity sha1-jPKrOa0aiy+UQ6v8/0ohO2WZSXs=
   dependencies:
     "@tiptap/core" "2.1.7"
     "@tiptap/pm" "2.1.7"
